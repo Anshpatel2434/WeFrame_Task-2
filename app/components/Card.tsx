@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import table from "../assets/table.jpg";
 import { CiHeart } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
-import Image from "next/image";
 
 const Card = ({ size }: { size: string }) => {
 	const [liked, setLiked] = useState(false);
@@ -76,7 +75,7 @@ const Card = ({ size }: { size: string }) => {
 				className={`
                     w-full h-[20rem] bg-[#F9F7F5] flex items-center justify-center`}
 			>
-				<Image
+				<img
 					src={table.src}
 					className={`w-[60%] object-contain
                         transition-transform duration-300 ease-in-out

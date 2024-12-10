@@ -5,21 +5,16 @@ import { SlBulb } from "react-icons/sl";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import { FaChevronDown } from "react-icons/fa";
-import Image from "next/image";
 
 export default function Navbar() {
 	return (
-		<div className="fixed top-0 z-50 w-[97%] flex-col justify-center items-center bg-white pt-5">
+		<div className="fixed top-0 z-50 w-[97%] flex-col justify-center items-center bg-white pt-5 mb-10">
 			{/* upper nav container */}
 			<div className="w-full flex justify-between items-start gap-[1%]">
 				<div className="w-[57%] flex gap-[1%] justify-start items-start ">
 					{/* image  */}
 					<div className="w-[20%]">
-						<Image
-							src={image.src}
-							alt="Logo"
-							className="w-full object-contain"
-						/>
+						<img src={image.src} alt="Logo" className="w-full object-contain" />
 					</div>
 
 					{/* search container  */}

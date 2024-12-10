@@ -1,6 +1,5 @@
 import React from "react";
 import image from "../assets/refigerator.png";
-import Image from "next/image";
 
 const Extra = () => {
 	return (
@@ -16,25 +15,25 @@ const Extra = () => {
 			</div>
 			<div className="w-full relative flex justify-center items-center gap-10">
 				<div className="flex flex-col justify-center items-center">
-					<Image src={image.src} alt="he" className="w-[40%]" />
+					<img src={image.src} className="w-[40%]" />
 					<p>Livraison & Reprise</p>
 					<p className="text-[#9C9C9C] text-sm">Selon vos besoins</p>
 				</div>
 				<div className="absolute h-[1px] bg-slate-400 w-[6%] top-[18%] left-[37%]"></div>
 				<div className="flex flex-col justify-center items-center">
-					<Image src={image.src} alt="he" className="w-[40%]" />
+					<img src={image.src} className="w-[40%]" />
 					<p>Livraison & Reprise</p>
 					<p className="text-[#9C9C9C] text-sm">Selon vos besoins</p>
 				</div>
 				<div className="absolute h-[1px] bg-slate-400 w-[6%] top-[18%] left-[47%]"></div>
 				<div className="flex flex-col justify-center items-center">
-					<Image alt="he" src={image.src} className="w-[40%]" />
+					<img src={image.src} className="w-[40%]" />
 					<p>Livraison & Reprise</p>
 					<p className="text-[#9C9C9C] text-sm">Selon vos besoins</p>
 				</div>
 				<div className="absolute h-[1px] bg-slate-400 w-[6%] top-[18%] left-[57%]"></div>
 				<div className="flex flex-col justify-center items-center">
-					<Image alt="he" src={image.src} className="w-[40%]" />
+					<img src={image.src} className="w-[40%]" />
 					<p>Livraison & Reprise</p>
 					<p className="text-[#9C9C9C] text-sm">Selon vos besoins</p>
 				</div>
