@@ -4,6 +4,7 @@ import table from "../assets/table.jpg";
 import { CiHeart } from "react-icons/ci";
 import { TfiRulerAlt } from "react-icons/tfi";
 import { LuCircleSlash2 } from "react-icons/lu";
+import Image from "next/image";
 
 const arr = [1, 2, 3, 4];
 
@@ -16,7 +17,8 @@ const Hero = () => {
 				<div className="w-[50%] h-full bg-[#F8F6F4] flex justify-center items-center">
 					{/* main image  */}
 					<div className="relative w-[50%]">
-						<img
+						<Image
+							alt="he"
 							src={machine.src}
 							className="min-w-full min-h-full object-contain"
 						/>
@@ -26,7 +28,11 @@ const Hero = () => {
 					<div className="absolute top-4 left-4 w-[5%] flex flex-col justify-center items-center gap-2">
 						{arr.map((item, index) => (
 							<div key={index} className="w-full">
-								<img src={table.src} className="w-full object-contain" />
+								<Image
+									alt={`${index}`}
+									src={table.src}
+									className="w-full object-contain"
+								/>
 							</div>
 						))}
 					</div>
@@ -104,15 +110,16 @@ const Hero = () => {
 				<div className="w-[48%] flex flex-col justify-center items-start gap-3">
 					<p className="font-semibold w-full">Description produit</p>
 					<p className="w-full text-[#9C9C9C]">
-						Festi vous propose à la location un/une "Jewel - grand couteau/10pc"
-						pour votre évenement et ce dès 0,35 € / pièce (HTVA). Que ce soit
-						pour votre mariage, une fête d'anniversaire ou du personnel, ce
-						produit a fait l'objet d'une sélection rigoureuse par notre équipe.
-						Il est en location chez nous sous la référence "VAJGC". Nous sommes
-						à votre disposition pour que les événements de nos clients, même en
-						last-minute, soient toujours une réussite. Vous pourrez trouver tout
-						une série d'autre produit à louer de ce type dans la catégorie "Art
-						de la Table".
+						Festi vous propose à la location un/une &quot;Jewel - grand
+						couteau/10pc&quot; pour votre évenement et ce dès 0,35 € / pièce
+						(HTVA). Que ce soit pour votre mariage, une fête d&quot;anniversaire
+						ou du personnel&quot; ce produit a fait l&quot;objet d&quot;une
+						sélection rigoureuse par notre équipe. Il est en location chez nous
+						sous la référence &quot;VAJGC&quot;. Nous sommes à votre disposition
+						pour que les événements de nos clients, même en last-minute, soient
+						toujours une réussite. Vous pourrez trouver tout une série
+						d&quot;autre produit à louer de ce type dans la catégorie &quot;Art
+						de la Table&quot;.
 					</p>
 				</div>
 

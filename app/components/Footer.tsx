@@ -2,13 +2,14 @@ import React from "react";
 import logo from "../assets/logo.png";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import { CiInstagram } from "react-icons/ci";
+import Image from "next/image";
 
 const Footer = () => {
 	return (
 		<div className="w-full flex justify-between items-center">
 			{/* left part  */}
 			<div className="flex items-center justify-center gap-10">
-				<img src={logo.src} />
+				<Image alt="he" src={logo.src} />
 				<div className="flex flex-col justify-center items-start gap-2">
 					<p className="text-xl font-bold">INFOS PRATIQUES</p>
 					<p className="text-lg">À propos</p>

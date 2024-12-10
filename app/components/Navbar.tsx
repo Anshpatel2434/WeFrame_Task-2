@@ -5,6 +5,7 @@ import { SlBulb } from "react-icons/sl";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import { FaChevronDown } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Navbar() {
 	return (
@@ -14,7 +15,11 @@ export default function Navbar() {
 				<div className="w-[57%] flex gap-[1%] justify-start items-start ">
 					{/* image  */}
 					<div className="w-[20%]">
-						<img src={image.src} alt="Logo" className="w-full object-contain" />
+						<Image
+							src={image.src}
+							alt="Logo"
+							className="w-full object-contain"
+						/>
 					</div>
 
 					{/* search container  */}
